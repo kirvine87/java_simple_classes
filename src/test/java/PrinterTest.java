@@ -16,7 +16,7 @@ public class PrinterTest {
     public void canPrintIfEnoughPaper(){
         assertEquals(true,  myPrinter.print(1, 5));
         assertEquals(95,  myPrinter.getPaper());
-        assertEquals(9,  myPrinter.getToner());
+        assertEquals(5,  myPrinter.getToner());
     }
 
 }

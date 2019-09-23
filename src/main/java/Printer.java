@@ -6,8 +6,8 @@ public class Printer {
     public boolean print(int pages, int copies) {
         int total = pages * copies;
         if (total <= this.paper){
+            this.toner -= total;
             this.paper -= total;
-            this.toner -= 1;
             return true;
         }
         return false;
