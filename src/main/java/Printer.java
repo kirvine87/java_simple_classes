@@ -1,7 +1,12 @@
 public class Printer {
 
-    private int paper = 100;
-    private int toner = 10;
+    private int paper;
+    private int toner;
+
+    public Printer(int paper, int toner){
+        this.paper = paper;
+        this.toner = toner;
+    }
 
     public boolean print(int pages, int copies) {
         int total = pages * copies;
